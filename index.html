@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <nav id="navbar">
+      <header>JS Basics</header>
+      <ul>
+        <li><a class="nav-link" href="#What_is_it?">What is it?</a></li>
+        <li><a class="nav-link" href="#Data_Types_and_Variables">Data Types and Variables</a></li>
+        <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
+        <li><a class="nav-link" href="#Loops">Loops</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+        <li><a class="nav-link" href="#Objects">Objects</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+<section class="main-section" id="What_is_it?">
+  <header>What is it?</header>
+  <p>Javascript is a programming language created for the web. Alongside HTML and CSS, Javascript can make your websites come to life.</p>
+  <p>Today, besides using it for cool functions on websites, Javascript can also be used for programming a robot (with an Arduino), writing a game script in Unity and building code editors (and a whole lot more, so I’m told.)</p>
+  </section>
+
+<section class="main-section" id="Data_Types_and_Variables">
+  <header>Data Types and Variables</header>
+  <p>Data & data types are the building blocks of any programming language because they help us organise information and determine how our programs will run.</p>
+  <p>The following are primitive data types in Javascript</p>
+  <ul>
+    <li>Numbers</li>
+    <li>Strings</li>
+    <li>Booleans</li>
+    <li>Undefined</li>
+    <li>Null</li>
+  </ul>
+  <p>Variables on the other hand, are containers for storing data.</p>
+  <header>What is NaN?</header>
+  <p>stands for "Not-A-Number" and it's often returned indicating an error with number operations. For instance, if you wrote some code that performed a math calculation, and the calculation failed to produce a valid number, NaN might be returned.</p>
+  <code>
+    // calculating the square root of a negative number will return NaN
+Math.sqrt(-10)
+
+// trying to divide a string by 5 will return NaN
+"hello"/5
+
+  </code>
+</section>
+
+<section class="main-section" id="Conditionals">
+  <header>Conditionals</header>
+  <p>Conditional statements control behaviour in JavaScript and determine whether or not pieces of code can run.</p>
+  <p>There are multiple different types of conditionals in JavaScript including:</p>
+  <ul>
+    <li>“If” statements: where if a condition is true it is used to specify execution for a block of code.</li>
+    <li>“Else” statements: where if the same condition is false it specifies the execution for a block of code.</li>
+    <li>“Else if” statements: this specifies a new test if the first condition is false.</li>
+  </ul>
+</section>
+
+<section class="main-section" id="Loops">
+  <header>Loops</header>
+  <p>Loops are for executing blocks of code over and over again. Loops can execute a block of code as long as a specified condition is true.</p>
+  <p>There are 3 types</p>
+  <ul>
+    <li>While Loop</li>
+    <li>For Loop</li>
+    <li>Nested Loops</li>
+  </ul>
+  <p>A note on incrementing and decrementing:</p>
+  <code>
+x++ or ++x // same as x = x + 1
+x-- or --x // same as x = x - 1
+x += 3 // same as x = x + 3
+x -= 6 // same as x = x - 6
+x *= 2 // same as x = x * 2
+x /= 5 // same as x = x / 5
+
+  </code>
+</section>
+
+<section class="main-section" id="Functions">
+  <header>Functions</header>
+  <p>Functions package up code so you can easily use (and reuse) a block of code. A JavaScript function is executed when "something" invokes it (calls it).</p>
+</section>
+
+<section class="main-section" id="Arrays">
+  <header>Arrays</header>
+  <p>An array
+ is useful because it stores multiple values into a single, organized data structure. You can define a new array by listing values separated with commas between square brackets [].</p>
+<code>
+  const cars = ["Saab", "Volvo", "BMW"];
+
+</code>
+<p>In arrays, you can store strings, numbers, booleans and even another array (i.e.***nested arrays***)!
+
+Nested arrays can be particularly hard to read, so it's common to write them on one line, using a newline after each comma:</p>
+<code>
+  var arraysInArrays = [
+  [1, 2, 3],
+  ["Julia", "James"],
+  [true, false, true, false]
+];
+
+</code>
+</section>
+
+<section class="main-section" id="Objects">
+  <header>Objects</header>
+  <p>JavaScript objects are a data structure in JavaScript that lets you store data about a particular thing, and helps you keep track of that data by using  “key”.</p>
+  <code>
+    var sister = {
+  name: "Sarah",
+  age: 23,
+  parents: [ "alice", "andy" ],
+  siblings: ["julia"],
+  favoriteColor: "purple",
+  pets: true
+};
+
+  </code>
+</section>
+    </main>
+
+    <body>
+</html>
